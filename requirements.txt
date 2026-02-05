@@ -1,0 +1,15 @@
+sounddevice
+scipy
+dotenv
+spacy
+pandas
+nltk
+presidio-analyzer
+presidio-anonymizer
+chonkie
+langchain
+pydantic
+langchain-ollama
+
+
+python -m spacy download en_core_web_lg
