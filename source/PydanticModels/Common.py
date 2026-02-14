@@ -44,8 +44,10 @@ class Action(str, Enum):
     going_to_start = "going_to_start"
     start = "start"
     stop = "stop"
+    stopped = "stopped"
     change = "change"
     continued = "continued"
+    started = "started"
 
 class Chronic(str, Enum):
     acute = "acute"

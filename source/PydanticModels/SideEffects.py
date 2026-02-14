@@ -3,7 +3,7 @@ from uuid import uuid4
 
 from pydantic import BaseModel, Field, UUIDStr
 
-from common import Status, TimeRef, EntityRef, Diarization
+from Common import Status, TimeRef, EntityRef, Diarization
 
 
 class SideEffectEvent(BaseModel):

@@ -3,4 +3,4 @@
 /venv
 
 .idea
-*cache__
+__pycache__

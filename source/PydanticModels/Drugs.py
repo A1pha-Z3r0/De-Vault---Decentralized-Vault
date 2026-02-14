@@ -2,7 +2,6 @@ from typing import List
 from uuid import uuid4
 
 from pydantic import BaseModel, Field
-#UUIDStr
 
 from source.PydanticModels.Common import Action, EntityRef, Diarization
 

@@ -26,9 +26,6 @@ Patient: No changes. I take it pretty regularly. I might miss a dose once in a w
 Doctor: Any allergies to medications or foods?
 Patient: I’m allergic to penicillin. I break out in hives—learned that the hard way when I was younger.
 Doctor: Thanks for mentioning that. Any recent illnesses, like a cold, flu, or infection?
-"""
-
-test2 = """
 Patient: No, nothing recent. I’ve felt fine otherwise.
 Doctor: Do you smoke or use any tobacco products?
 Patient: No, I don’t smoke.
@@ -68,6 +65,15 @@ Doctor: Do you have any questions or concerns right now?
 Patient: Just… is this something I should be worried about long-term?
 Doctor: It’s too early to say. You did the right thing by coming in early. That gives us the best chance to manage whatever this is before it becomes serious.
 Patient: That’s reassuring.
+"""
+
+
+
+
+
+
+
+test2 = """
 Doctor: Once we have the results, we’ll talk again. And if we need to follow up, is it okay to contact you at the same phone number?
 Patient: Yes, that number is fine.
 Doctor: Great. A nurse will be in shortly to get started on the ECG and blood draw.
@@ -139,5 +145,4 @@ Patient: Yes, that’s correct.
 Doctor: Perfect. I’ll see you shortly.
 Patient: Thank you, Doctor.
 Doctor: You’re welcome, Michael.
-
 """
