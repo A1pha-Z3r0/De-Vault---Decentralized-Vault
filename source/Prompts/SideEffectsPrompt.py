@@ -1,4 +1,4 @@
-SideEffect_examples ="""
+side_effect_examples ="""
 TASK:
 SideEffects Extraction ONLY (HIGH PRECISION)
 

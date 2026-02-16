@@ -1,13 +1,13 @@
 from typing import List, Annotated
 from uuid import uuid4
 
-from pydantic import BaseModel, Field, UUIDStr
+from pydantic import BaseModel, Field
 
-from Common import DiagnosisConf, EntityRef, Chronic, Diarization
+from source.PydanticModels.Common import DiagnosisConf, EntityRef, Chronic, Diarization
 
 
 class DiagnosisEvent(BaseModel):
-    event_id: UUIDStr = Field(default_factory=lambda: str(uuid4()),
+    event_id: str = Field(default_factory=lambda: str(uuid4()),
                               description="Unique identifier for this diagnosis event. "
                                           "Auto-generated; do not infer from text."
                               )

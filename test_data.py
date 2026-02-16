@@ -65,15 +65,6 @@ Doctor: Do you have any questions or concerns right now?
 Patient: Just… is this something I should be worried about long-term?
 Doctor: It’s too early to say. You did the right thing by coming in early. That gives us the best chance to manage whatever this is before it becomes serious.
 Patient: That’s reassuring.
-"""
-
-
-
-
-
-
-
-test2 = """
 Doctor: Once we have the results, we’ll talk again. And if we need to follow up, is it okay to contact you at the same phone number?
 Patient: Yes, that number is fine.
 Doctor: Great. A nurse will be in shortly to get started on the ECG and blood draw.

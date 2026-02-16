@@ -45,14 +45,16 @@ def main():
             if domain is None:
                 continue
 
-            dis = dispatcher.get(domain)
+            dispatch = dispatcher.get(domain)
 
-            domain_prompt, domain_extraction = dis()
+            domain_prompt, domain_extraction = dispatch()
 
             llm.create_chain(domain_extraction)
+
             results = llm.invoke(text=chunk.text, sys_prompt=sys_prompt_extract, examples=domain_prompt)
 
             print(type(results))
+
 
     return
 

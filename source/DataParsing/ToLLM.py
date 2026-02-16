@@ -1,4 +1,6 @@
 from langchain_ollama import OllamaLLM
+from spacy.pipeline.pipe import raise_error
+
 from source.DataParsing.promptMaker import prompt_creator
 
 class LLMInference:
@@ -29,12 +31,23 @@ class LLMInference:
         #print(self.prompt.format(sys_prompt = sys_prompt, context = text, examples = examples))
         #print("\n\n\n\n\n")
 
-        results = self.chain.invoke(input = {"sys_prompt" : sys_prompt,
+
+        try:
+            results = self.chain.invoke(input = {"sys_prompt" : sys_prompt,
                                              "examples" : examples,
-                                             "context": text,
-                                             })
+                                             "context": text,})
 
-        print(results)
-        print(type(results))
+            print(results)
+            print(type(results))
 
-        return results
+            return results
+
+        except:
+            print("Skipping it....")
+            print("The pydantic model was not satisfied")
+
+
+
+
+
+        #return results

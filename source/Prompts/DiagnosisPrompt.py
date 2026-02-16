@@ -1,4 +1,4 @@
-domain_examples = """
+diagnosis_examples = """
 TASK:
 Diagnosis Extraction ONLY
 

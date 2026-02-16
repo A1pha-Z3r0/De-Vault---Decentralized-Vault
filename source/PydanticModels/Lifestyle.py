@@ -2,8 +2,8 @@ from typing import Optional, Annotated, Union, Literal, List
 from enum import Enum
 from uuid import uuid4
 
-from pydantic import BaseModel, Field, UUIDStr, model_validator
-from Common import EntityRef, Diarization  # assuming common.py
+from pydantic import BaseModel, Field, model_validator
+from source.PydanticModels.Common import EntityRef, Diarization  # assuming common.py
 
 
 class LifestyleDomain(str, Enum):
@@ -63,7 +63,7 @@ LifestyleDetails = Annotated[
 
 
 class LifestyleEvent(BaseModel):
-    event_id: UUIDStr = Field(default_factory=lambda: str(uuid4()))
+    event_id: str = Field(default_factory=lambda: str(uuid4()))
     domain: LifestyleDomain = Field(..., description="Lifestyle domain for this event (must match details.domain).")
 
     entity_ref: EntityRef = Field(..., description="How the entity was referenced (explicit, previous, etc.).")
