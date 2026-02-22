@@ -38,7 +38,6 @@ Clinical visits are audio-recorded locally, transcribed using Whisper, anonymize
 All processing runs locally using Ollama-hosted LLMs. No data is stored by default—structured outputs are streamed directly to the patient’s device, putting privacy and control first.
 
 
-## Installations & Setup:
 
 
 
